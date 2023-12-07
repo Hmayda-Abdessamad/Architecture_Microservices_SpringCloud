@@ -1,35 +1,56 @@
-# Architecture_Microservices_SpringCloud
+Microservices Architecture with Spring Cloud
+Requirements:
+Java 17
+Docker
+Steps to Run the Project Locally:
+Clone the project:
 
-# Requirement :
-Java 17 + docker 
-# Follow this steps to run the project lcoally
-1)  open your terminal and clone this project
-2)  generate the docker image for eureka server 
-    - go inside the eureka server project 
-    >cd "Architecture Micro Service avec Spring Cloud/"Eureka server""
-    - package eureka server app into an executable jar using your editor or by typing :
-    >mvn package 
-       ![img_2.png](img_2.png)
-    - build a docker image from this jar file by typing:
-    > docker build -t eureka:0.1 .
-    - check your docker images by typing in your cmd:
-    > docker images 
-    
-       ![img.png](img.png)
-    + maintenaant on a une image docker d' eureka server 
-    
-3)   generate the docker image for the API GATEWAY 
-     - go inside the Gateway project
-    ![img_1.png](img_1.png)
-     - package gateway  app into an executable jar using your editor or by typing :
-     >mvn package
-![img_3.png](img_3.png)
-     - build a docker image from this jar file by typing:
-     ![img_4.png](img_4.png)
-     - check your docker images by typing in your cmd:
-     > docker images
+bash
+Copy code
+git clone <project_repository_url>
+Eureka Server:
+Generate the Docker image for Eureka Server:
 
-    ![img_5.png](img_5.png) ![img.png](img.png)
-     + maintenaant on a une image docker d' eureka server 
+Navigate to the Eureka Server project:
 
-    
+bash
+Copy code
+cd "Architecture Micro Service avec Spring Cloud/Eureka server"
+Package Eureka Server app into an executable JAR using Maven:
+
+bash
+Copy code
+mvn package
+Build a Docker image from the JAR file:
+
+bash
+Copy code
+docker build -t eureka:0.1 .
+Check Docker images:
+
+bash
+Copy code
+docker images
+API Gateway:
+Generate the Docker image for the API Gateway:
+
+Navigate to the Gateway project:
+
+bash
+Copy code
+cd "Architecture Micro Service avec Spring Cloud/Gateway"
+Package the Gateway app into an executable JAR using Maven:
+
+bash
+Copy code
+mvn package
+Build a Docker image from the JAR file:
+
+bash
+Copy code
+docker build -t gateway:0.1 .
+Check Docker images:
+
+bash
+Copy code
+docker images
