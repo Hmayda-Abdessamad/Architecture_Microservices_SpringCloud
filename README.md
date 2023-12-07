@@ -24,7 +24,7 @@ Java 17 + docker
      - go inside the Gateway project
     ![img_1.png](img_1.png)
      - package gateway  app into an executable jar using your editor or by typing :
-     >mvn package
+     > mvn package
 
     ![img_3.png](img_3.png)
 
