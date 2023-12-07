@@ -71,6 +71,12 @@ This Spring Boot-based microservices project comprises two microservices, namely
 2) type :
   > docker compose up
 
-this will take time if you don't have the postgres and the pgadmin docker images in your machine , docker will start pulling them 
-3) you will find 5 docker container running like this image from docker desktop shows: 
+- this will take time if you don't have the postgres and the pgadmin docker images in your machine , docker will start pulling them 
+
+4) you will find 5 docker container running like this image from docker desktop shows: 
 ![img_7.png](img_7.png)
+5) go to the ui of eureka server , you will find 3 instances :
+![img_8.png](img_8.png)
+6) so all is good know  we have to test our two services by going to :
+- ![img_9.png](img_9.png)
+- ![img_10.png](img_10.png)
