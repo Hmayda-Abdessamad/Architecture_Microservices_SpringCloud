@@ -65,5 +65,12 @@ This Spring Boot-based microservices project comprises two microservices, namely
     + know we have a docker image for our  service voiture  application
     
 # Run the project :
-before you try to run the project ensure you have compleshed the previous steps and you have this 4 docker images :
+1) before you try to run the project ensure you have compleshed the previous steps and you have this 4 docker images :
 ![img_5.png](img_5.png)
+2) go to the root folder of the project "Architecture Micro Service avec Spring Cloud" where the docker-compose.yaml file is located 
+2) type :
+  > docker compose up
+
+this will take time if you don't have the postgres and the pgadmin docker images in your machine , docker will start pulling them 
+3) you will find 5 docker container running like this image from docker desktop shows: 
+![img_7.png](img_7.png)
