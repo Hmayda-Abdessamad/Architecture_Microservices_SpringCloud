@@ -33,5 +33,5 @@ Java 17 + docker
      - check your docker images by typing in your cmd:
      > docker images
      + maintenaant on a une image docker d' eureka server
-       ![img_5.png](img_5.png) 
+       ![img_6.png](img_6.png)
     
