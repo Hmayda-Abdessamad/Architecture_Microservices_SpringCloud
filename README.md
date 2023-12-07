@@ -13,14 +13,12 @@ This Spring Boot-based microservices project comprises two microservices, namely
 
 - Clients Service: A microservice handling client-related functionalities.
 - Voitures Service: A microservice capable of communicating with the Clients service via the Feign client.
-Eureka Server and Gateway:
 
-2) Eureka Server:
-Responsible for service registration and discovery.
-3) Gateway (Eureka Gateway):
-Manages API routing and acts as a gateway to the microservices.
-4) Databases:
-Each microservice (clients and voitures) utilizes its own PostgreSQL database instance.
+2) Eureka Server and Gateway:
+
+ - Eureka Server:Responsible for service registration and discovery.
+ - Gateway (Eureka Gateway):Manages API routing and acts as a gateway to the microservices.
+3) Databases:Each microservice (clients and voitures) utilizes its own PostgreSQL database instance.
 # Follow this steps to setup  the project :
 1)  open your terminal and clone this project
 2)  generate the docker image for eureka server 
