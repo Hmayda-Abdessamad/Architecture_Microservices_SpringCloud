@@ -36,7 +36,7 @@ services:
 
   eureka:
     container_name: eureka
-    image: eureka:0.1
+    image: hmaydaabdo/eureka:0.1
     depends_on:
       - postgres
     ports:
@@ -46,7 +46,7 @@ services:
 
   gateway:
     container_name: gateway
-    image: gateway:0.1
+    image: hmaydaabdo/gateway:0.1
     environment:
       SPRING_PROFILES_ACTIVE: docker
     depends_on:
@@ -57,7 +57,7 @@ services:
       - spring
   clients:
     container_name: clients
-    image: clients:0.1
+    image: hmaydaabdo/clients:0.1
     environment:
       SPRING_PROFILES_ACTIVE: docker
     depends_on:
@@ -70,7 +70,7 @@ services:
 
   voitures:
     container_name: voitures
-    image: voitures:0.1
+    image: hmaydaabdo/voitures:0.1
     environment:
       SPRING_PROFILES_ACTIVE: docker
     depends_on:
@@ -81,6 +81,7 @@ services:
     networks:
       - spring
       - postgres
+    restart: on-failure
 
 networks:
   postgres:
