@@ -10,14 +10,14 @@ Java 17 + docker
     - package eureka server app into an executable jar using your editor or by typing :
     >mvn package 
 
-       ![img_2.png](img_2.png)
+    ![img_2.png](img_2.png)
 
     - build a docker image from this jar file by typing:
     > docker build -t eureka:0.1 .
     - check your docker images by typing in your cmd:
     > docker images 
     
-       ![img.png](img.png)
+    ![img.png](img.png)
     + maintenaant on a une image docker d' eureka server 
     
 3)   generate the docker image for the API GATEWAY 
@@ -26,10 +26,10 @@ Java 17 + docker
      - package gateway  app into an executable jar using your editor or by typing :
      >mvn package
 
-        ![img_3.png](img_3.png)
+    ![img_3.png](img_3.png)
 
      - build a docker image from this jar file by typing:
-     ![img_4.png](img_4.png)
+    ![img_4.png](img_4.png)
      - check your docker images by typing in your cmd:
      > docker images
 
